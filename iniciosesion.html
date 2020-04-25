@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Iniciar Sesion</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="misEstilos.css" rel="stylesheet" type="text/css" />
+    <style>
+        h2 {
+            text-align: center;
+        }
+
+        .inicio2 {
+
+            border: rgb(53, 218, 80) 15px outset;
+            width: 500px;
+           text-align:center;
+
+        }
+        div{
+            position: relative;
+            right: -200px;
+            top: 70px;
+        }
+        
+
+
+        label {
+            width: 150px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        table {
+            margin: auto
+        }
+
+        .botones {
+            text-align: center;
+            padding-top: 15px;
+        }
+    </style>
+
+</head>
+
+<body background="images/inicio.jpg">
+
+
+
+    <div class="row">
+        <nav class="col-3 col-s-2">
+
+        </nav>
+        <main>
+            <div class="inicio2" style="background-color: rgb(115, 226, 171);">
+                <h2>Iniciar Sesion</h2>
+                <form method="POST">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><label for="email">Correo Electronico</label> </td>
+                                <td><input type="text" id = "email" name="email" /> </td>
+                            </tr>
+                            <tr>
+                                <td><label for="password">Contraseña</label> </td>
+                                <td><input type="password" id = "password" name="password" /></td>
+                            </tr>
+                            <tr>
+                                <td><label for="pais">Usuario</label></td>
+                                <td>
+                                    <select name="pais">
+                                        <option>Cliente</option>
+                                        <option>Administrador</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr> 
+                                <td colspan="2" class="botones">
+                                    <input type="submit" value="Enviar" name="botonEnviar" />
+                                    <input type="reset" value="Limpiar Campos" name="botonLimpiar" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </main>
+
+</body>
+
+</html>

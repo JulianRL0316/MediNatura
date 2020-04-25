@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Regístrese</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="misEstilos.css" rel="stylesheet" type="text/css" />
+    <style>
+        h2 {
+            text-align: center;
+        }
+
+        .registro {
+            border: rgb(53, 218, 80) 15px outset;
+            width: 500px;
+
+        }
+
+        div {
+            position: relative;
+            right: -200px;
+            top: 70px;
+        }
+
+        label {
+            width: 150px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        table {
+            margin: auto
+        }
+
+        .botones {
+            text-align: center;
+            padding-top: 15px;
+        }
+    </style>
+
+</head>
+
+<body background="images/inicio.jpg">
+    <div class="row">
+
+        <main>
+            <div class="registro" style="background-color: rgb(115, 226, 171);">
+                <h2>Regístrarse</h2>
+                <form method="POST">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><label for="email">Correo Electronico</label> </td>
+                                <td><input type="text" id="email" name="email" /> </td>
+                            </tr>
+                            <tr>
+                                <td><label for="nombre">Nombre</label></td>
+                                <td><input type="text" id="nombreUsuario" name="nombreUsuario" /> </td>
+                            </tr>
+                            <tr>
+                                <td><label for="apellido">Apellido</label></td>
+                                <td><input type="text" id="apellido" name="apellido" /> </td>
+                            </tr>
+                            <tr>
+                                <td><label for="password">Contraseña</label> </td>
+                                <td><input type="password" id="password" name="password" /></td>
+                            </tr>
+                            <tr>
+                                <td> <label for="repitaPassword">Repita contraseña</label></td>
+                                <td> <input type="password" id="repitaPassword" name="repitaPassword" /></td>
+                            </tr>
+                            <tr>
+                                <td> <label for="genero">Genero</label></td>
+                                <td>
+                                    <input type="radio" name="genero" checked /> Masculino
+                                    <input type="radio" name="genero" /> Femenino
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2" class="botones">
+                                    <input type="submit" value="Enviar" name="botonEnviar" />
+                                    <input type="reset" value="Limpiar Campos" name="botonLimpiar" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </main>
+
+    </div>
+
+</body>
+
+</html>

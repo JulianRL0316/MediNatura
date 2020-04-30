@@ -1,15 +1,12 @@
-<%-- 
-    Document   : add
-    Created on : 28/03/2020, 02:46:06 AM
-    Author     : julia
---%>
-
+<%@page import="javax.swing.text.html.CSS"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <link href="css/main.css" rel="stylesheet"  type="text/css"/>
+        <title>Agregar Usuario</title>
     </head>
     <body>
     <center>
